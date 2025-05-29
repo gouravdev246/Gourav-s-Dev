@@ -32,8 +32,8 @@ export function ContactContent() {
                 <Mail className="h-6 w-6 text-primary mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:gourav@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    gourav@example.com {/* Replace with actual email */}
+                  <a href="mailto:gouravdev246@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    gouravdev246@gmail.com
                   </a>
                 </div>
               </div>
@@ -42,7 +42,7 @@ export function ContactContent() {
                 <div>
                   <h4 className="font-semibold text-foreground">Location</h4>
                   <p className="text-muted-foreground">
-                    Somewhere in the Digital Universe {/* Replace with actual location if desired */}
+                    Dhupguri, West Bengal
                   </p>
                 </div>
               </div>
