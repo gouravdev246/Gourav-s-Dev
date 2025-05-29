@@ -45,10 +45,10 @@ export function AboutContent() {
             <ul className="space-y-2 text-muted-foreground">
               {[
                 "Python Programming",
-                "Artificial Intelligence Concepts",
+                "AI Tools",
+                "Problem-Solving & Thinking",
+                "Communication Skills & Confidence",
                 "Web Development Fundamentals",
-                "Problem-Solving & Algorithmic Thinking",
-                "Eagerness to learn new technologies",
               ].map((strength, index) => (
                 <li key={index} className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
