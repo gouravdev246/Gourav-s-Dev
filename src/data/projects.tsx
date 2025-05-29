@@ -21,7 +21,7 @@ const PROJECTS_DATA: Project[] = [
         </ul>
       </>
     ),
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9ydGZvbGlvJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NDg1NDE5ODh8MA&ixlib=rb-4.1.0&q=80&w=1080',
     imageHint: 'portfolio website',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'AI'],
     liveDemoUrl: '/',
@@ -49,7 +49,7 @@ const PROJECTS_DATA: Project[] = [
         </ul>
       </>
     ),
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1625314897518-bb4fe6e95229?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhaSUyMG1vZGVyYXRpb258ZW58MHx8fHwxNzQ4NTQxOTg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
     imageHint: 'ai moderation',
     tags: ['Python', 'Machine Learning', 'NLP', 'API Development'],
     codeRepoUrl: 'https://github.com/yourusername/ai-moderator', // Replace
@@ -70,7 +70,7 @@ const PROJECTS_DATA: Project[] = [
         <p className="mb-4">The architecture was designed for microservices, allowing different parts of the system to scale independently. Performance optimization and security were top priorities throughout the development lifecycle.</p>
       </>
     ),
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: 'https://images.unsplash.com/photo-1495420233471-7ff3f397d22f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlY29tbWVyY2UlMjBwbGF0Zm9ybXxlbnwwfHx8fDE3NDg1NDE5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080',
     imageHint: 'ecommerce platform',
     tags: ['Java', 'Spring Boot', 'React', 'Microservices', 'AWS'],
     liveDemoUrl: '#', // Replace with actual link or remove if not applicable
@@ -91,7 +91,7 @@ export function getProjectBySlug(slug: string): Project | undefined {
   return PROJECTS_DATA.find(project => project.slug === slug);
 }
 
-export function getFeaturedProjects(count: number = 2): Project[] {
+export function getFeaturedProjects(count: number = 3): Project[] {
   // For now, just return the first 'count' projects.
   // Later, this could be based on a 'featured' flag or other criteria.
   return PROJECTS_DATA.slice(0, count);
