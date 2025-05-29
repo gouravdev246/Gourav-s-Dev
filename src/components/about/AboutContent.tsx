@@ -14,7 +14,7 @@ export function AboutContent() {
         <div className="grid md:grid-cols-3 gap-8 items-center mb-12">
           <div className="md:col-span-1 flex justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbmltZXxlbnwwfHx8fDE3NDg1NDIzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGJveXxlbnwwfHx8fDE3NDg1NDI0OTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt={`Portrait of ${SITE_AUTHOR}`}
               width={240}
               height={240}
