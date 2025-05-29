@@ -1,7 +1,8 @@
+
 import Image from 'next/image';
 import { SectionWrapper, SectionHeader } from '@/components/ui/section-wrapper';
 import { SITE_AUTHOR } from '@/constants/site';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, GraduationCap } from 'lucide-react'; // Added GraduationCap
 
 export function AboutContent() {
   return (
@@ -55,6 +56,20 @@ export function AboutContent() {
                   <span>{strength}</span>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold text-primary mb-3">Education</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li className="flex items-start">
+                <GraduationCap className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
+                <span>12th Grade: 85.2%</span>
+              </li>
+              <li className="flex items-start">
+                <GraduationCap className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
+                <span>10th Grade: 73.57%</span>
+              </li>
             </ul>
           </div>
           
