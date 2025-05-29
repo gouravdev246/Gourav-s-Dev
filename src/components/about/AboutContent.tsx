@@ -24,10 +24,10 @@ export function AboutContent() {
           </div>
           <div className="md:col-span-2">
             <p className="text-lg text-foreground mb-4">
-              Hello! I&apos;m {SITE_AUTHOR}, a passionate and results-oriented software developer with a knack for crafting elegant and efficient solutions to complex problems. My journey in technology has been driven by a relentless curiosity and a desire to build things that make a difference.
+              Hello! I&apos;m Gourav Sarkar, a first-year Computer Science Engineering student at Lovely Professional University (LPU). My journey into technology is fueled by an insatiable curiosity for new discoveries, particularly within the exciting realms of tech and Artificial Intelligence.
             </p>
             <p className="text-lg text-foreground">
-              I specialize in full-stack development, with a strong focus on modern JavaScript frameworks like React and Next.js, and I&apos;m always excited to explore emerging technologies, especially in the realm of Artificial Intelligence.
+              I&apos;m currently diving deep into learning Python, and I&apos;m enthusiastic about building foundational skills that will allow me to create innovative solutions in the future. I&apos;m always eager to explore new concepts and contribute to impactful projects.
             </p>
           </div>
         </div>
@@ -36,19 +36,19 @@ export function AboutContent() {
           <div>
             <h3 className="text-2xl font-semibold text-primary mb-3">My Philosophy</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I believe in writing clean, maintainable code and building user-centric applications. Collaboration, continuous learning, and a proactive approach to problem-solving are core to my work ethic. I thrive in dynamic environments where I can contribute to innovative projects and grow alongside talented teams.
+              I believe in the power of continuous learning and a hands-on approach to understanding complex systems. Collaboration and a proactive mindset are key to my learning process. I thrive in environments where I can ask questions, experiment, and grow alongside fellow learners and mentors.
             </p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-3">Key Strengths</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-3">Key Areas of Interest & Learning</h3>
             <ul className="space-y-2 text-muted-foreground">
               {[
-                "Full-Stack Web Development",
-                "AI Integration & Prompt Engineering",
-                "Problem-Solving & Analytical Thinking",
-                "Agile Methodologies & Team Collaboration",
-                "Continuous Learning & Adaptability",
+                "Python Programming",
+                "Artificial Intelligence Concepts",
+                "Web Development Fundamentals",
+                "Problem-Solving & Algorithmic Thinking",
+                "Eagerness to learn new technologies",
               ].map((strength, index) => (
                 <li key={index} className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
@@ -59,9 +59,9 @@ export function AboutContent() {
           </div>
           
           <div>
-            <h3 className="text-2xl font-semibold text-primary mb-3">Beyond the Code</h3>
+            <h3 className="text-2xl font-semibold text-primary mb-3">Beyond the Screen</h3>
             <p className="text-muted-foreground leading-relaxed">
-              When I&apos;m not coding, I enjoy [mention a hobby or two, e.g., exploring new hiking trails, reading about cutting-edge tech, or contributing to open-source projects]. These activities help me stay balanced and often inspire new perspectives in my professional work.
+              When I&apos;m not immersed in my studies or coding, I enjoy [mention a hobby or two, e.g., exploring new tech blogs, participating in coding challenges, or learning about space]. These activities help me stay balanced and often spark new ideas for my tech explorations.
             </p>
           </div>
         </div>
