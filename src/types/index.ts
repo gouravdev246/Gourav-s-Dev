@@ -7,6 +7,11 @@ export type NavItem = {
   match?: (pathname: string) => boolean;
 };
 
+export type ProjectImage = {
+  url: string;
+  hint?: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -17,7 +22,7 @@ export type Project = {
   tags: string[];
   liveDemoUrl?: string;
   codeRepoUrl?: string;
-  images?: { url: string; hint?: string }[]; // Additional images for project page
+  images?: ProjectImage[]; // Additional images for project page
   year?: number;
   role?: string;
 };
@@ -26,4 +31,15 @@ export type SocialLink = {
   name: string;
   url: string;
   icon: LucideIcon;
+};
+
+export type ExperienceEntry = {
+  company: string;
+  role: string;
+  startDate: string;
+  endDate: string; // Can be "Present"
+  description: string | React.ReactNode;
+  technologies: string[];
+  logoUrl?: string; // Optional company logo
+  logoHint?: string;
 };
