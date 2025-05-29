@@ -1,9 +1,11 @@
+
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google'; // Geist_Mono removed as not explicitly used
 import './globals.css';
 import { Header } from '@/components/global/Header';
 import { Footer } from '@/components/global/Footer';
 import { Toaster } from "@/components/ui/toaster";
+import { APP_NAME } from '@/constants/site';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -11,7 +13,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Gourav's Digital Canvas",
+  title: APP_NAME,
   description: "Portfolio of Gourav, showcasing projects and skills.",
 };
 

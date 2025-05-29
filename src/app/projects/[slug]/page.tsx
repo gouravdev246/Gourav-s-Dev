@@ -1,4 +1,5 @@
-import { getProjectBySlug, getAllProjects } from '@/data/projects';
+
+import { getProjectBySlug, getAllProjects } from '@/data/projects.tsx';
 import { ProjectDetail } from '@/components/projects/ProjectDetail';
 import { notFound } from 'next/navigation';
 import type { Metadata, ResolvingMetadata } from 'next';

@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download } from 'lucide-react';
@@ -9,7 +10,7 @@ export function HeroSection() {
     <section className="py-16 md:py-24 lg:py-32 bg-muted rounded-lg shadow-sm">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-foreground">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extold tracking-tight text-foreground">
             Welcome to <span className="text-primary">{APP_NAME}</span>
           </h1>
           <p className="mt-4 text-lg sm:text-xl text-muted-foreground max-w-xl">
