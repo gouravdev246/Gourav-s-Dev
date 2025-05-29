@@ -32,19 +32,32 @@ export const SITE_DESCRIPTION = "Explore the creative works and professional jou
 // Skills data
 export const SKILLS_CATEGORIES = [
   {
-    name: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
-  },
-  {
-    name: "Backend",
-    skills: ["Node.js", "Express.js", "Python", "Firebase"],
-  },
-  {
-    name: "AI/ML",
-    skills: ["Genkit", "LangChain", "TensorFlow", "PyTorch"],
-  },
-  {
-    name: "Tools & Others",
-    skills: ["Git", "Docker", "CI/CD", "Agile Methodologies"],
+    name: "Technical Skills",
+    skills: [
+      "React", 
+      "Next.js", 
+      "TypeScript", 
+      "Tailwind CSS", 
+      "HTML5", 
+      "CSS3",
+      "Node.js", 
+      "Express.js", 
+      "Python", 
+      "Firebase", 
+      "Bootstrap", 
+      "Numpy",
+      "Genkit", 
+      "LangChain", 
+      "TensorFlow", 
+      "PyTorch", 
+      "ChatGPT", 
+      "Generative AI Tools",
+      "Git", 
+      "Docker", 
+      "CI/CD", 
+      "Agile Methodologies", 
+      "Firebase Studio", 
+      "Cursor"
+    ],
   }
 ];

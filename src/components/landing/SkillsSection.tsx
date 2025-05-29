@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { SKILLS_CATEGORIES } from '@/constants/site';
@@ -11,16 +12,16 @@ export function SkillsSection() {
         title="My Expertise"
         subtitle="A collection of technologies and tools I'm proficient in."
       />
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 gap-8"> {/* Modified for single category display */}
         {SKILLS_CATEGORIES.map((category) => (
           <Card key={category.name} className="shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg">
             <CardHeader>
               <CardTitle className="text-xl font-semibold text-primary">{category.name}</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2">
+              <ul className="space-y-2 md:columns-2 lg:columns-3"> {/* Added multi-column layout */}
                 {category.skills.map((skill) => (
-                  <li key={skill} className="flex items-center">
+                  <li key={skill} className="flex items-center break-inside-avoid-column"> {/* Added break-inside-avoid-column */}
                     <CheckCircle className="h-5 w-5 text-primary mr-2 flex-shrink-0" />
                     <span className="text-sm text-foreground">{skill}</span>
                   </li>
