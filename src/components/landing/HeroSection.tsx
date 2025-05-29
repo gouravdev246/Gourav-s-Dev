@@ -32,11 +32,11 @@ export function HeroSection() {
         <div className="hidden md:block">
            <Image
             src="https://placehold.co/600x400.png"
-            alt="Abstract representation of digital creativity"
+            alt="A boy doing coding in a dark room"
             width={600}
             height={400}
             className="rounded-lg shadow-xl object-cover"
-            data-ai-hint="digital art technology"
+            data-ai-hint="coding dark room"
             priority
           />
         </div>
