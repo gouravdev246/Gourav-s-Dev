@@ -14,12 +14,12 @@ export function AboutContent() {
         <div className="grid md:grid-cols-3 gap-8 items-center mb-12">
           <div className="md:col-span-1 flex justify-center">
             <Image
-              src="https://placehold.co/300x300.png"
+              src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbmltZXxlbnwwfHx8fDE3NDg1NDIzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt={`Portrait of ${SITE_AUTHOR}`}
               width={240}
               height={240}
               className="rounded-full shadow-xl object-cover"
-              data-ai-hint="portrait professional"
+              data-ai-hint="anime portrait"
             />
           </div>
           <div className="md:col-span-2">
