@@ -34,30 +34,17 @@ export const SKILLS_CATEGORIES = [
   {
     name: "Technical Skills",
     skills: [
-      "React", 
-      "Next.js", 
-      "TypeScript", 
-      "Tailwind CSS", 
-      "HTML5", 
-      "CSS3",
-      "Node.js", 
-      "Express.js", 
-      "Python", 
-      "Firebase", 
-      "Bootstrap", 
+      "HTML",
+      "CSS",
+      "Python",
+      "Bootstrap",
       "Numpy",
-      "Genkit", 
-      "LangChain", 
-      "TensorFlow", 
-      "PyTorch", 
-      "ChatGPT", 
-      "Generative AI Tools",
-      "Git", 
-      "Docker", 
-      "CI/CD", 
-      "Agile Methodologies", 
-      "Firebase Studio", 
-      "Cursor"
+      "Git",
+      "Firebase Studio",
+      "Cursor",
+      "ChatGPT",
+      "Other AI Tools"
     ],
   }
 ];
+
