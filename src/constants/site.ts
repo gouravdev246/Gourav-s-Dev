@@ -20,7 +20,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'www.linkedin.com/in/gouravdev',
+    url: 'https://www.linkedin.com/in/gouravdev/',
     icon: Linkedin,
   },
   {
@@ -51,3 +51,4 @@ export const SKILLS_CATEGORIES = [
     ],
   }
 ];
+
