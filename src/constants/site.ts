@@ -1,6 +1,6 @@
 
 import type { NavItem, SocialLink } from '@/types';
-import { Home, LayoutGrid, User, Mail, Wand2, Github, Linkedin, FileText } from 'lucide-react';
+import { Home, LayoutGrid, User, Mail, Wand2, Github, Linkedin, FileText, Instagram } from 'lucide-react';
 
 export const APP_NAME = "Gourav's Dev";
 
@@ -15,15 +15,19 @@ export const NAV_LINKS: NavItem[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/yourusername', // Replace with actual username
+    url: 'https://github.com/gouravdev246',
     icon: Github,
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/yourusername', // Replace with actual username
+    url: 'www.linkedin.com/in/gouravdev',
     icon: Linkedin,
   },
-  // Add more social links if needed
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/ff_gourav_yt/',
+    icon: Instagram,
+  },
 ];
 
 export const SITE_AUTHOR = "Gourav";
@@ -47,4 +51,3 @@ export const SKILLS_CATEGORIES = [
     ],
   }
 ];
-
