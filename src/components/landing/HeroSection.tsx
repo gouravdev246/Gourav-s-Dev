@@ -31,8 +31,8 @@ export function HeroSection() {
         </div>
         <div className="hidden md:block animate-in fade-in zoom-in-90 duration-700 delay-400">
            <Image
-            src="https://placehold.co/600x400.png"
-            alt="An anime young boy"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2Rpbmd8ZW58MHx8fHwxNzQ4NTg3MDQzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="An anime young boy coding"
             width={600}
             height={400}
             className="rounded-lg shadow-xl object-cover"
