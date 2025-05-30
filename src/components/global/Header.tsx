@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -8,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { APP_NAME, NAV_LINKS } from '@/constants/site';
 import type { NavItem } from '@/types';
+import { ThemeToggleButton } from '@/components/theme/ThemeToggleButton';
 
 const NavLink = ({ href, label, icon: Icon, currentPath, onClick }: NavItem & { currentPath: string; onClick?: () => void }) => {
   const isActive = currentPath === href || (href === '/' ? currentPath.startsWith('/#') : currentPath.startsWith(href + '/'));
@@ -41,15 +43,21 @@ export function Header() {
 
 
   if (!isMounted) {
+    // This simplified placeholder is for the initial server render before hydration.
+    // The ThemeToggleButton itself handles its icon placeholder during client-side hydration.
     return (
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold text-primary">
             {APP_NAME}
           </Link>
-          <div className="h-8 w-8 bg-muted rounded-md animate-pulse md:hidden" /> {/* Placeholder for button */}
+          <div className="flex items-center space-x-2">
+             <div className="h-10 w-10 bg-muted rounded-md animate-pulse" /> {/* Placeholder for Theme Toggle */}
+             <div className="h-8 w-8 bg-muted rounded-md animate-pulse md:hidden" /> {/* Placeholder for Mobile Menu Button */}
+          </div>
           <nav className="hidden md:flex items-center space-x-2">
              {NAV_LINKS.map((item, index) => ( <div key={index} className="h-8 w-20 bg-muted rounded-md animate-pulse" /> ))}
+             {/* Desktop theme toggle placeholder already covered by the one above if we move it outside nav */}
           </nav>
         </div>
       </header>
@@ -64,15 +72,19 @@ export function Header() {
           {APP_NAME}
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          {NAV_LINKS.map((item) => (
-            <NavLink key={item.href} {...item} currentPath={pathname} />
-          ))}
-        </nav>
+        {/* Desktop Navigation & Theme Toggle */}
+        <div className="hidden md:flex items-center space-x-2">
+          <nav className="flex items-center space-x-1">
+            {NAV_LINKS.map((item) => (
+              <NavLink key={item.href} {...item} currentPath={pathname} />
+            ))}
+          </nav>
+          <ThemeToggleButton />
+        </div>
 
-        {/* Mobile Navigation */}
-        <div className="md:hidden">
+        {/* Mobile Navigation & Theme Toggle */}
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggleButton />
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
